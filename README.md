@@ -19,7 +19,8 @@ To view all the components of this framework, navigate to http://localhost:4567/
 
 #### Publishing to GitHub Pages
 
-Publishing to `gh-pages` is done automatically by running `bundle exec rake publish`
+- Publishing to `gh-pages` is done automatically by running `bundle exec rake publish`
+- Visit http://your-github-username.github.io/resume/
 
 #### Notes
 
