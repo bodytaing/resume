@@ -1,0 +1,23 @@
+font_name: icons
+css_selector: .{{glyph}}
+preprocessor_path: "fonts/output"
+no_hash: true
+force: true
+debug: true
+quiet: false
+
+# depending on the type of application, you'll probably need to change the source paths accordingly
+
+input:
+  vectors: source/fonts/input
+
+output:
+  fonts: source/fonts/output
+  css: source/stylesheets
+  preview: previews
+
+templates:
+ - scss
+ - preview
+
+autowidth: true
