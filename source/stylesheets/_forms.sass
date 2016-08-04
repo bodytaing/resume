@@ -19,10 +19,14 @@ fieldset
     font-weight: 400
     padding: 0 0.25em
 
+input, select, textarea, button, .btn
+  margin-bottom: 1px
+
 input, select, textarea
   @include appearance-none
   border-radius: $radius
-  border: $border-width solid #ddd
+  border: none
+  background-color: $input-background-color
   box-shadow: none
   color: $text
   display: block
@@ -33,15 +37,15 @@ input, select, textarea
   &:hover, &:focus
     border-color: $hover
     transition: $all
+    background-color: $input-background-color-hover
   &:focus
-    box-shadow: 0 0 10px $focus
+    border-color: $brand-color
 
 textarea
   padding: $input-left-right-padding
 
 select
-  background-image: url($svg-arrow-updown)
-  background-color: $input-background-color
+  background-image: image_url($svg-arrow-updown)
   background-size: 1em
   background-repeat: no-repeat
   background-position: 99% 50%

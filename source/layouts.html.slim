@@ -1,0 +1,233 @@
+---
+hide_from_sitemap: true
+---
+
+- set_meta_tags title: 'Layouts'
+- content_for :page_classes do
+  | layouts
+
+- @ipsum_title = 'Lorem ipsum dolor sit amet, sed do eiusmod, sondu'
+- @ipsum_paragraph = 'Consequat duis aute irure dolor in reprehenderit in voluptate velit esse.'
+- @ipsum_title_small = 'Dolor sit amet sondu cotnghi'
+- @ipsum_paragraph_small = 'Duis aute  in voluptate velit esse.'
+
+sass:
+  .bg-01
+    background-image: image_url('https://unsplash.it/1000/1000/?image=787')
+  .bg-02
+    background-image: image_url('https://unsplash.it/1000/1000/?image=723')
+  .bg-03
+    background-image: image_url('https://unsplash.it/1000/1000/?image=803')
+  .bg-04
+    background-image: image_url('https://unsplash.it/1000/1000/?image=884')
+  .bg-05
+    background-image: image_url('https://unsplash.it/1000/1000/?image=981')
+  .bg-06
+    background-image: image_url('https://unsplash.it/1000/1000/?image=826')
+  .bg-07
+    background-image: image_url('https://unsplash.it/1000/1000/?image=823')
+  .bg-08
+    background-image: image_url('https://unsplash.it/1000/1000/?image=813')
+  .bg-09
+    background-image: image_url('https://unsplash.it/1000/1000/?image=892')
+  .bg-10
+    background-image: image_url('https://unsplash.it/1000/1000/?image=900')
+  .bg-11
+    background-image: image_url('https://unsplash.it/1000/1000/?image=894')
+  .bg-12
+    background-image: image_url('https://unsplash.it/1000/1000/?image=901')
+  .bg-13
+    background-image: image_url('https://unsplash.it/1000/1000/?image=896')
+  .bg-14
+    background-image: image_url('https://unsplash.it/1000/1000/?image=923')
+  .bg-15
+    background-image: image_url('https://unsplash.it/1000/1000/?image=898')
+
+.row.bg-black.light-text
+  .section.center
+    h1 Layouts
+
+.page.bg
+
+  .row.boxed-backgrounds
+    .section
+      h2.center Background cards
+      hr
+      .col-1-3
+        .card
+          .boxed.center.margin
+            .boxed-action
+              h2 Thing of beauty
+              = link_to 'Do it', '#', class: 'btn large solid round black'
+            .boxed-image.bg-cover.bg-10
+      .col-1-3
+        .card
+          .boxed.center.margin
+            .boxed-action
+              h2 Thing of beauty
+              = link_to 'Do it', '#', class: 'btn large solid round black'
+            .boxed-image.bg-cover.bg-11
+      .col-1-3
+        .card
+          .boxed.center.margin
+            .boxed-action
+              h2 Thing of beauty
+              = link_to 'Do it', '#', class: 'btn large solid round black'
+            .boxed-image.bg-cover.bg-12
+      .col-1-3
+        .card
+          .boxed.center.margin
+            .boxed-action
+              h2 Thing of beauty
+              = link_to 'Do it', '#', class: 'btn large solid round black'
+            .boxed-image.bg-cover.bg-13
+      .col-1-3
+        .card
+          .boxed.center.margin
+            .boxed-action
+              h2 Thing of beauty
+              = link_to 'Do it', '#', class: 'btn large solid round black'
+            .boxed-image.bg-cover.bg-14
+      .col-1-3
+        .card
+          .boxed.center.margin
+            .boxed-action
+              h2 Thing of beauty
+              = link_to 'Do it', '#', class: 'btn large solid round black'
+            .boxed-image.bg-cover.bg-15
+      .clear
+
+  .row.post-card-grid
+    .section
+      h2.center Text Below Cards
+      hr
+      .autogrid
+        .col
+          .post-card.margin
+            = image_tag 'https://unsplash.it/1000/800/?image=731'
+            .padding.text-reset
+              h3 = @ipsum_title
+              p = @ipsum_paragraph
+        .col
+          .post-card.margin
+            = image_tag 'https://unsplash.it/1000/800/?image=872'
+            .padding.text-reset
+              h3 = @ipsum_title
+              p = @ipsum_paragraph
+        .col
+          .post-card.margin
+            = image_tag 'https://unsplash.it/1000/800/?image=176'
+            .padding.text-reset
+              h3 = @ipsum_title
+              p = @ipsum_paragraph
+
+      .autogrid
+        .col
+          .post-card.margin
+            = image_tag 'https://unsplash.it/1000/800/?image=957'
+            .padding.text-reset
+              h3 = @ipsum_title
+              p = @ipsum_paragraph
+        .col
+          .post-card.margin
+            = image_tag 'https://unsplash.it/1000/800/?image=118'
+            .padding.text-reset
+              h3 = @ipsum_title
+              p = @ipsum_paragraph
+        .col
+          .post-card.margin
+            = image_tag 'https://unsplash.it/1000/800/?image=263'
+            .padding.text-reset
+              h3 = @ipsum_title
+              p = @ipsum_paragraph
+        .col
+          .post-card.margin
+            = image_tag 'https://unsplash.it/1000/800/?image=485'
+            .padding.text-reset
+              h3 = @ipsum_title
+              p = @ipsum_paragraph
+
+  .row.photo-collage
+    .section
+      h2.center Photo collage
+      hr
+
+      .photo-box
+        .filler.col-1-3.bg-01
+          .photo-box-content
+        .filler.col-2-3.bg-02
+          .photo-box-content
+            h3 = @ipsum_title_small
+            p = @ipsum_paragraph_small
+        .clear
+
+        .filler.col-2-3.bg-03
+          .photo-box-content
+        .filler.col-1-3.bg-04
+          .photo-box-content
+            h3 = @ipsum_title_small
+            p = @ipsum_paragraph_small
+        .clear
+
+        .filler.col-1-2.bg-05
+          .photo-box-content
+            h3 = @ipsum_title_small
+            p = @ipsum_paragraph_small
+        .filler.col-1-2.bg-06
+          .photo-box-content
+        .clear
+
+        .filler.col-1-3.bg-07
+          .photo-box-content
+            h3 = @ipsum_title_small
+            p = @ipsum_paragraph_small
+        .filler.col-1-3.bg-08
+          .photo-box-content
+            h3 = @ipsum_title_small
+            p = @ipsum_paragraph_small
+        .filler.col-1-3.bg-09
+          .photo-box-content
+            h3 = @ipsum_title_small
+            p = @ipsum_paragraph_small
+        .clear
+
+  .row
+    .section
+      h2.center Account
+      hr
+
+      .col-1-4
+        ul.bordered-list
+          li = link_to 'Profile', '#', class: 'here'
+          li = link_to 'Subscription', '#'
+          li = link_to 'Payment', '#'
+
+      .col-3-4.bg-white.padding.no-first-last
+        h2
+          | Richard Hendricks
+          = image_tag 'http://www.piedpiper.com/app/themes/pied-piper/dist/images/richard.png', class: 'float-right', width: '15%'
+        ul
+          li
+            small.gray-light Email
+            br
+            span = data.site.email
+          li
+            small.gray-light Handle
+            br
+            span @firstlast
+          li
+            small.gray-light Description
+            br
+            span = data.site.description
+
+        p
+          small.gray-light About
+          br
+          | Richard is the CEO (Chief Executive Officer) of Pied Piper, a company he founded and then was fired from. Isn’t that weird? Although he left four credits short of graduation, he attended Stanford, where none of his computer science classes mentioned the possibility of having an innovative software firm you created ripped from you by soulless bean counters.
+
+        p
+          = link_to 'Edit Profile', '#', class: 'btn green'
+
+      .clear
+
+  hr

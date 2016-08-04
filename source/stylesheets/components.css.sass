@@ -4,6 +4,9 @@
 
 // Although this is for demo purposes, we recommend you keep the components page within your application so that you can easily test global changes with ease.
 
+.hero
+  box-shadow: none
+
 .grid-preview
   margin: 2em 0
   [class*='col-'], .autogrid .col
@@ -46,12 +49,10 @@
   .header, nav ul li
     background: #efefef !important
 
-// This block highlights the header links, demo only.
-
-.components .header .menu li:nth-child(1),
-.get-started .header .menu li:nth-child(2),
-.examples .header .menu li:nth-child(3)
-  background: $header-link-hover
+.background-preview, .overlay-preview
+  [class*='bg-']
+    .section
+      padding-bottom: 25%
 
 @media screen and (max-width: $phablet)
 

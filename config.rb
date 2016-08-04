@@ -8,6 +8,7 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/sitemap.xml', layout: false
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -20,16 +21,21 @@ page '/*.txt', layout: false
 
 # Syntax highlighting
 activate :syntax
-
 # Pretty URLs
 activate :directory_indexes
-
 # Set relative paths needed for github pages
 activate :relative_assets
+# SEO Optimizations
+activate :meta_tags
+# Sitemap generator
+activate :search_engine_sitemap, default_priority: 1, default_change_frequency: 'daily'
+# Bust caches
+activate :asset_hash, ignore: ['images/hero.jpg', 'images/logo.png']
 
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  set :url_root, 'http://localhost:4567'
 end
 
 ###
@@ -46,13 +52,18 @@ end
 # Build-specific configuration
 configure :build do
 
-  # Minify on build
+  activate :robots, :rules => [
+    {:user_agent => '*', :allow => %w(/)}
+  ],
+  sitemap: '#{data.site.url}/sitemap.xml'
+
   activate :minify_html
   activate :minify_css
   activate :minify_javascript
   activate :gzip
 
   set :relative_links, true
-  set :site_url, "/vital"
+  set :site_url, '/bodytaing'
+  set :url_root, 'http://bodytaing.com'
 
 end

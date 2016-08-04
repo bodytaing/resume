@@ -2,3 +2,39 @@
 
 // Custom
 // Styles that are very unique to specific pages or intended not to be re-used should go here.
+
+[class*='bg']
+  @include background-size-cover
+
+.bg-01
+  background-image: image_url('hero.jpg')
+
+// Global classes
+
+.narrow
+  max-width: 34em
+
+// Home
+
+.index
+  // base padding
+  .page .section
+    padding: 5% 1em
+
+@media screen and (max-width: $handheld)
+
+  .hero
+    h1
+      font-size: 2.2em
+    h2
+      font-size: 1.6em
+    h3
+      font-size: 1.4em
+    h4
+      font-size: 1.2em
+    h5
+      font-size: 1.1em
+    h6
+      font-size: 1.0em
+    i
+      font-size: 2em

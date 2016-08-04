@@ -1,0 +1,32 @@
+@import variables
+
+// Photo collages
+
+.photo-box
+  position: relative
+  [class*='bg-']
+    @include background-size-cover
+  .filler
+    position: relative
+    top: 0
+    padding-bottom: 30%
+  .photo-box-content
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 1em
+    @extend .light-text
+    @extend .text-reset
+    &:after
+      content: ''
+    &:hover
+      background: rgba(0,0,0,0.3)
+      transition: $all
+
+@media screen and (max-width: $handheld)
+
+  .photo-box
+    .filler
+      padding-bottom: 80%

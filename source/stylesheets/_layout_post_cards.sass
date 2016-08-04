@@ -1,0 +1,21 @@
+@import variables
+
+// Post cards
+
+.post-card
+  background: #fff
+  box-shadow: 0 .1em .4em rgba(0, 0, 0, .07)
+  img
+    border-radius: 0
+    height: auto
+    width: 100%
+  p
+    color: #666
+
+@media screen and (max-width: $handheld)
+
+  .post-card-grid
+    .autogrid
+      display: block
+    .col
+      margin-bottom: 4%

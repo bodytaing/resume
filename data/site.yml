@@ -1,0 +1,31 @@
+# Required
+
+language: 'en-us'
+url: 'http://bodytaing.com'
+preferred_url: 'http://bodytaing.com'
+human_url: 'bodytaing.com'
+name: 'Body Taing'
+title: 'UX Ninja - Body Taing'
+description: "The resume of Body Taing, UX Ninja"
+
+logo_image_name: 'logo.png'
+logo_image_path: 'http://bodytaing.com/images/logo.png'
+
+email: ''
+subject: 'Hello'
+body: 'Hello...'
+address: ''
+phone: '(000) 000-0000'
+
+# gh-pages directory
+# if you're using github pages
+directory: '/bodytaing'
+
+# social
+twitter_handle: '@bodytaing'
+
+# opengraph
+pull_image: 'http://bodytaing.com/images/hero.jpg'
+
+# gray image
+lazyload_placeholder: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='

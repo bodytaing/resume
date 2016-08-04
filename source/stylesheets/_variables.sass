@@ -2,131 +2,147 @@
 
 // Fonts
 
-$font:                         "Helvetica Neue", Helvetica, Sans-Serif
-$code:                         "Monaco", Menlo, Courier
-$icons:                        "icons", helvetica, Sans-Serif
+$helvetica:                         "Helvetica Neue", Helvetica, sans-serif
+$titillium:                         "Titillium Web", helvetica, sans-serif
+$oxygen:                            "Oxygen", helvetica, sans-serif
+
+$font:                              $oxygen
+
+$code:                              "Monaco", Menlo, Courier
+$icons:                             "icons", helvetica, sans-serif
 
 // App Colors
 
-$header:                       #FFF
-$notice:                       #FFE0A3
-$body:                         #FAFAFA
-$page:                         #FFF
+$header:                            #FFF
+$notice:                            #FFE0A3
+$body:                              #FAFAFA
+$page:                              #FFF
+$brand-color:                       #2079B5
+$brand-color-bright:                #248DD4
 
 // Base Colors
 
-$white:                        #FFF
-$gray-lightest:                #F9F9F9
-$gray-lighter:                 #EEE
-$gray-light:                   #BBB
-$gray-medium:                  #999
-$gray:                         #666
-$gray-dark:                    #333
-$black:                        #000
-$red:                          #C9282E
-$red-bright:                   #FF0008
-$orange:                       #E16E00
-$yellow:                       #D5B778
-$green:                        #6BAF56
-$blue:                         #5A9FC8
+$white:                             #FFF
+$gray-lightest:                     #F9F9F9
+$gray-lighter:                      #EEE
+$gray-light:                        #BBB
+$gray-medium:                       #999
+$gray:                              #666
+$gray-dark:                         #333
+$black:                             #000
+$red:                               #C9282E
+$red-bright:                        #FF0008
+$red-light:                         #FF4451
+$orange:                            #E16E00
+$yellow:                            #D5B778
+$green:                             #6BAF56
+$blue:                              $brand-color
 
 // Background Colors
 
-$bg-gray-lgihter:              $gray-lighter
-$bg-transparent:               rgba(0,0,0,0.1)
-$bg-tab:                       $gray-light
+$bg-gray-lgihter:                   $gray-lighter
+$bg-transparent:                    rgba(0,0,0,0.1)
+$bg-tab:                            $gray-light
 
 // Gradated Background Colors
 
-$bg-red:                       linear-gradient(to bottom right, #C9282E, #A60052)
-$bg-red-fallback:              #A8002D
+$bg-default:                        linear-gradient(to bottom right, #4B99CB, #91E1B9)
+$bg-default-fallback:               #4B99CB
 
-$bg-black:                     linear-gradient(to bottom right, #222, #333)
-$bg-black-fallback:            #252525
+$bg-red:                            linear-gradient(to bottom right, #BB3D53, #FF2F39)
+$bg-red-fallback:                   #BB3D53
 
-$bg-green:                     linear-gradient(to bottom right, #73B558, #47B9A1)
-$bg-green-fallback:            #52BB5C
+$bg-orange:                         linear-gradient(to bottom right, #EE495C, #F09259)
+$bg-orange-fallback:                #EE495C
 
-$bg-gray:                      linear-gradient(to bottom right, #767676, #636363)
-$bg-gray-fallback:             #9A9A9A
+$bg-green:                          linear-gradient(to bottom right, #45D093, #B0CB80)
+$bg-green-fallback:                 #45D093
 
-$bg-blue:                      linear-gradient(to bottom right, #25639A, #1F9CEA)
-$bg-blue-fallback:             #1C6AB9
+$bg-blue:                           linear-gradient(to bottom right, #4E6CCF, #20CAB6)
+$bg-blue-fallback:                  #4E6CCF
+
+$bg-black:                          linear-gradient(to bottom right, #161616, #444)
+$bg-black-fallback:                 #161616
+
+$bg-gray:                           linear-gradient(to bottom right, #888, #DFDFDF)
+$bg-gray-fallback:                  #888
+
+// Overlays
+
+$overlay-default:                   linear-gradient(to bottom right, rgba(20, 100, 250, 0.5), rgba(0, 250, 100, 0.3))
+$overlay-red:                       linear-gradient(to bottom right, rgba(250, 0, 20, 0.4), rgba(250, 0, 200, 0.3))
+$overlay-orange:                    linear-gradient(to bottom right, rgba(250, 70, 0, 0.5), rgba(250, 250, 0, 0.3))
+$overlay-green:                     linear-gradient(to bottom right, rgba(80, 230, 100, 0.5), rgba(0, 100, 250, 0.3))
+$overlay-blue:                      linear-gradient(to bottom right, rgba(20, 100, 250, 0.5), rgba(0, 190, 50, 0.2))
+$overlay-black:                     linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))
+$overlay-gray:                      linear-gradient(to bottom right, rgba(50, 50, 50, 0.5), rgba(200, 200, 200, 0.3))
 
 // Hover
 
-$link:                         $red
-$hover:                        $red-bright
-$focus:                        rgba(255,0,0,0.2)
+$link:                              $brand-color
+$hover:                             $brand-color-bright
+$focus:                             rgba(255,0,0,0.2)
 
 // Header
 
-$header-height:                4.25em
-$header-link-hover:            #F5F5F5
+$header-height:                     4.25em
+$header-link-hover:                 #F5F5F5
 
 // Typography
 
-$text:                         #444
-$bold:                         500
+$text:                              #444
+$bold:                              600
 
 // Transitions
 
-$standard-animation-speed:     200ms
-$all:                          all $standard-animation-speed ease-in-out
-$color:                        color $standard-animation-speed ease-in-out
+$standard-animation-speed:          0.1s
+$all:                               all $standard-animation-speed ease-in-out
+$color:                             color $standard-animation-speed ease-in-out
 
 // GPU Trickery
 
-$translate:                    translateZ(0)
+$translate:                         translateZ(0)
 
 // Radius
 
-$radius:                       0.15em
-$round:                        99em
+$radius:                            0.1em
+$round:                             99em
 
 // Grid
 
-$grid-padding:                 2%
+$grid-padding:                      5%
 
 // Loaders
 
-$loader-large: 48px
-$loader: 32px
-$loader-small: 16px
-$loader-smallest: 9px
+$loader-large:                      48px
+$loader:                            32px
+$loader-small:                      16px
+$loader-smallest:                   9px
 
 // Forms
 
-$size:                         1em
-$border-width:                 1px
-$input-left-right-padding:     0.5em
-$input-checkbox-checked:       $link
-$input-background-color:       #FFF
-$input-height:                 2.7em
+$size:                              1em
+$border-width:                      1px
+$input-left-right-padding:          0.5em
+$input-checkbox-checked:            $link
+$input-background-color:            #f6f6f6
+$input-background-color-hover:      #eee
+$input-height:                      2.7em
 
 // Breakpoints
 
-$desktop-large:                1680px
-$desktop:                      1440px
-$laptop:                       1280px
-$tablet:                       1080px
-$phablet:                      860px
-$phablet-handheld:             780px
-$handheld:                     667px
-$handheld-landscape:           334px
+$desktop-large:                     1680px
+$desktop:                           1440px
+$laptop:                            1280px
+$tablet:                            1080px
+$phablet:                           860px
+$phablet-handheld:                  780px
+$handheld:                          667px
+$handheld-portrait:                 480px
 
 // Characters
 
-$non-breaking-space:           '\00a0'
-
-// Mixins
-
-@mixin appearance-none
-  -moz-appearance:             none
-  -o-appearance:               none
-  -ms-appearance:              none
-  -webkit-appearance:          none
-  appearance:                  none
+$non-breaking-space:                '\00a0'
 
 // Vectors
 

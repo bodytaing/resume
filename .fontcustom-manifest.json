@@ -1,50 +1,50 @@
 {
   "checksum": {
-    "previous": "f83801735655bfce7bbf0e6c29b725190dc065cb91faeb97894448dacf9a01a8",
-    "current": "f83801735655bfce7bbf0e6c29b725190dc065cb91faeb97894448dacf9a01a8"
+    "previous": "b1d22eead3f7c45fe24ebcc1440173aaff534c9eff8be1eecefff18c0617ba23",
+    "current": "b1d22eead3f7c45fe24ebcc1440173aaff534c9eff8be1eecefff18c0617ba23"
   },
   "fonts": [
-    "source/fonts/output/icons.ttf",
-    "source/fonts/output/icons.svg",
-    "source/fonts/output/icons.woff",
-    "source/fonts/output/icons.eot"
+    "source/icons/output/icons.ttf",
+    "source/icons/output/icons.svg",
+    "source/icons/output/icons.woff",
+    "source/icons/output/icons.eot"
   ],
   "glyphs": {
     "icon-arrow-updown": {
       "codepoint": 61705,
-      "source": "source/fonts/input/icon-arrow-updown.svg"
+      "source": "source/icons/input/icon-arrow-updown.svg"
     },
     "icon-check": {
       "codepoint": 61696,
-      "source": "source/fonts/input/icon-check.svg"
+      "source": "source/icons/input/icon-check.svg"
     },
     "icon-clock": {
       "codepoint": 61707,
-      "source": "source/fonts/input/icon-clock.svg"
+      "source": "source/icons/input/icon-clock.svg"
     },
     "icon-close": {
       "codepoint": 61698,
-      "source": "source/fonts/input/icon-close.svg"
+      "source": "source/icons/input/icon-close.svg"
     },
     "icon-close-empty": {
       "codepoint": 61699,
-      "source": "source/fonts/input/icon-close-empty.svg"
+      "source": "source/icons/input/icon-close-empty.svg"
     },
     "icon-close-outline": {
       "codepoint": 61700,
-      "source": "source/fonts/input/icon-close-outline.svg"
+      "source": "source/icons/input/icon-close-outline.svg"
     },
     "icon-menu": {
       "codepoint": 61706,
-      "source": "source/fonts/input/icon-menu.svg"
+      "source": "source/icons/input/icon-menu.svg"
     },
     "icon-resume": {
       "codepoint": 61708,
-      "source": "source/fonts/input/icon-resume.svg"
+      "source": "source/icons/input/icon-resume.svg"
     },
     "icon-vital": {
       "codepoint": 61697,
-      "source": "source/fonts/input/icon-vital.svg"
+      "source": "source/icons/input/icon-vital.svg"
     }
   },
   "options": {
@@ -59,16 +59,16 @@
     "font_name": "icons",
     "force": true,
     "input": {
-      "templates": "source/fonts/input",
-      "vectors": "source/fonts/input"
+      "templates": "source/icons/input",
+      "vectors": "source/icons/input"
     },
     "no_hash": true,
     "output": {
       "css": "source/stylesheets",
-      "fonts": "source/fonts/output",
+      "fonts": "source/icons/output",
       "preview": "previews"
     },
-    "preprocessor_path": "fonts/output",
+    "preprocessor_path": "icons/output",
     "quiet": false,
     "templates": [
       "scss",
